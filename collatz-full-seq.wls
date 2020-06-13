@@ -12,3 +12,26 @@ collatzseq[9780657630];
 
 map[n_Integer/;OddQ[n]]:=o
 map[n_Integer/;EvenQ[n]]:=e
+
+oddStrict[n_Real /; n \[Element] PositiveReals] := 3 n + 1
+tickStrict[n_Real /; n \[Element] PositiveReals] := (
+ 1 + Cos[\[Pi] n])/2
+
+ tockStrict[n_Real /; n \[Element] PositiveReals] := 1 - tickStrict[n]
+
+ evenStrict[n_Real /; n \[Element] PositiveReals] := n/2
+
+ oddStrict[n_Real /; n \[Element] PositiveReals] := 3 n + 1
+
+ evenRecurseRealStrict[x_Real /; x \[Element] PositiveReals, 
+  n_Integer /; n \[Element] PositiveIntegers] := x/2^n
+
+  oddRecurseRealStrict[x_Real /; x \[Element] PositiveReals, 
+   n_Integer /; n \[Element] PositiveIntegers] :=1/2 (-1 + 3^n) + 3^n x
+
+odd[n] := 3 n + 1
+tick[n] := (1 + Cos[\[Pi] n])/2
+tock[n] := 1 - tick[n]
+even[n] := n/2
+evenRecurseReal[x, n] := x/2^n
+oddRecurseReal[x, n] := 1/2 (-1 + 3^n) + 3^n x
