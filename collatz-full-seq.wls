@@ -9,3 +9,6 @@ collatzseq[1] = {1}
 collatzseq[n_Integer /; n > 1] := collatzseq[n] = {n, Splice@collatzseq@collatz@n}
 
 collatzseq[9780657630];
+
+map[n_Integer/;OddQ[n]]:=o
+map[n_Integer/;EvenQ[n]]:=e
