@@ -11,22 +11,10 @@ might or might not yield something later.
 - Graph theory
 - Number theory
 - Formal Grammar
+- - Studying sequence of odd/even statistically
 - Markov Chains
+- - Mostly used to test pet theories; not for prescribing incumbent structure a priori
+- Treating 2^n integers as buckets and studying the deviation of successive application of the collatz func 
 
-#### Function Composition
-TODO
-
-#### Real `if`
-TODO
-
-#### Graph theory
-TODO
-
-### Number theory
-TODO
-
-### Formal Grammar
-TODO
-
-### Markov Chains
+#### Explanation
 TODO
