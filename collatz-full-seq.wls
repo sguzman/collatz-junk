@@ -1,4 +1,4 @@
-$eecursionLimit = Infinity
+$RecursionLimit = Infinity
 
 collatz[1] = 1
 
