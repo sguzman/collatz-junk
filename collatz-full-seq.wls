@@ -35,3 +35,20 @@ tock[n] := 1 - tick[n]
 even[n] := n/2
 evenRecurseReal[x, n] := x/2^n
 oddRecurseReal[x, n] := 1/2 (-1 + 3^n) + 3^n x
+
+Grid@
+ Table[
+  {i, Map[Splice@
+      ConstantArray[First@#, Last@#]
+     &, FactorInteger[i]]},
+  {i, collatzseq[27]}]
+
+Table[
+ With[{val = N@Log[2 , Apply[Times, Select[
+        Map[Splice@
+           ConstantArray[First@#, Last@#]
+          &, FactorInteger[i]]
+        , 2 != # &]]]},
+  val - Floor[val]
+  ],
+ {i, collatzseq@27}]
