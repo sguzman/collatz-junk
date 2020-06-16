@@ -52,3 +52,20 @@ Table[
   val - Floor[val]
   ],
  {i, collatzseq@27}]
+
+c = Map[map,collatzseq[93571393692802302]];
+
+Grid@
+ TakeLargestBy[
+  Select[
+   Table[
+    With[{list = Tally@Partition[c, i, 1]},
+     Splice@Table[
+       {First@j, i Last@j}
+       , {j, list}]
+     ], {i, 1, 100, 1}],
+   And[
+     Length@First@# != Last@#,
+     Length@First@# != 1
+     ] &]
+  , Last, 15]
