@@ -69,3 +69,23 @@ Grid@
      Length@First@# != 1
      ] &]
   , Last, 15]
+
+Grid@
+ TakeLargestBy[
+  Select[
+   Table[
+    With[{
+      list = Tally@
+        Partition[c,i, 1]
+      },
+     Splice@
+      Table[
+       {First@j, Total@Map[cardinal, First@j] Last@j, i Last@j,
+        Last@j},
+       {j, list}]],
+    {i, 1, 100, 1}],
+   And[
+     Last@# != 1,
+     Length@First@# != 1
+     ] &]
+  , #[[2]] &, 10]
