@@ -11,10 +11,12 @@ collatzseq[n_Integer /; n > 1] :=
 
 collatzseq[93571393692802302];
 
-map[n_Integer /; OddQ[n]] := o
-map[n_Integer /; EvenQ[n]] := e
+map[n_Integer /; OddQ[n]] = o
+map[n_Integer /; EvenQ[n]] = e
 
 c = Map[map, collatzseq[93571393692802302]];
+cardinal[e] = 1
+cardinal[o] = 1
 
 Grid@TakeLargestBy[
   Select[Table[
