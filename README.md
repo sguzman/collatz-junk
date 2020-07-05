@@ -21,3 +21,4 @@ TODO
 
 ### Good links
 - [The Ultimate Challenge: The 3x+1 Problem](https://bookstore.ams.org/mbk-78)
+- [Wikipedia's Collatz conjecture article](https://en.wikipedia.org/wiki/Collatz_conjecture)
