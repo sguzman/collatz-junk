@@ -15,6 +15,7 @@ might or might not yield something later.
 - Markov Chains
 - - Mostly used to test pet theories; not for prescribing incumbent structure a priori
 - Treating 2^n integers as buckets and studying the deviation of successive application of the collatz func 
+- Split all integers into buckets demarcated by the values of 2<sup>n</sup> and on successive applications of collatz function, track distance to boundary
 
 #### Explanation
 TODO
